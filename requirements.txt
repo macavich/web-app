@@ -1,0 +1,6 @@
+Django==2.1.1
+psycopg2
+django-postgres-extra
+pandas
+pandas-datareader
+matplotlib

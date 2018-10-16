@@ -1,0 +1,8 @@
+<h1> {{ first_strategy.strategy }} </h1>
+  <ul>
+    {% for strategy in strategies %}
+      <li><a href="{{ request.path }}{{ strategy.substrategy_slug }}">
+        {{ strategy.substrategy }}</a>
+      </li>
+    {% endfor %}
+  </ul>

@@ -1,0 +1,12 @@
+{% if positions %}
+  <h1> {{ substrategy }} </h1>
+    <ul>
+      {% for position in positions %}
+        <li><a href="{{ request.path }}">
+          {{ position.instrument.symbol }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+{% else %}
+  <h3> No Positions to display for {{ substrategy }} </h3>
+{% endif %}

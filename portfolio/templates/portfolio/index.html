@@ -1,0 +1,10 @@
+{% if strategies %}
+    <h1> Choose a Strategy </h1>
+    <ul>
+    {% for strategy in strategies %}
+        <li><a href="/portfolio/{{ strategy.strategy_slug }}/">{{ strategy.strategy }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No Portfolios are available.</p>
+{% endif %}
